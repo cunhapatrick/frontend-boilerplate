@@ -1,9 +1,7 @@
-import AntdScssThemePlugin from "antd-scss-theme-plugin";
-
 const webpackConfig = {
   rules: [
     {
-      test: /\.scss$/,
+      test: /\.less$/,
       use: [
         {
           loader: "style-loader"
@@ -11,9 +9,14 @@ const webpackConfig = {
         {
           loader: "css-loader"
         },
-        AntdScssThemePlugin.themify({
-          loader: "sass-loader" // compiles SASS to CSS
-        })
+        {
+          loader: "less-loader", // compiles LESS to CSS
+          options: {
+            // NOTE custom theme variables
+            modifyVars: {},
+            javasciptEnabled: true
+          }
+        }
       ]
     }
   ]
