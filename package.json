@@ -22,7 +22,8 @@
       "<rootDir>/src/config/test-setup.js"
     ],
     "roots": [
-      "<rootDir>/src/app/components/"
+      "<rootDir>/src/app/components/",
+      "<rootDir>/src/pages/"
     ],
     "testRegex": "\\.test\\.(ts|tsx|js)$"
   },
