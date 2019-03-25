@@ -12,11 +12,13 @@ On the project's root directory, open `next.config.js`, inside withTypescript > 
 
 ### TSLint & Typescript Configuration
 
-On the project's root directory, locate `tsconfig.json` to modify basic rules of the tyscript and locate `tslint.json` to modify syntax rules verification of the tslint for typescript.
+On the project's root directory, locate `tsconfig.json` to modify basic rules of the typescript and relative path's and locate `tslint.json` to modify syntax rules verification of the tslint for typescript.
 
 ### Babel Configuration
 
-On the project's root directory is locate the basic preset configuration to use typescript with nextjs and the configuration of antd to use less.
+On the project's root directory is locate the basic preset configuration to use typescript with nextjs, the configuration of antd to use less/css and the jest configuration preset to run unit tests with typescript components.
+
+###
 
 # Develop, Build and Running Instructions
 
@@ -25,3 +27,5 @@ Run `$ yarn dev` to run the development enviromnent of the project.
 Run `$ yarn build && yarn start` to build and run the production enviromnent of the project.
 
 # Run Tests
+
+Run `$ yarn test` and wait for the results.
