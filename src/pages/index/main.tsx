@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Button from "../../app/components/button";
+import Button from "components/button";
 import "./styles.main.less";
 export default class extends Component {
   render() {

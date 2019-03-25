@@ -13,7 +13,15 @@ const INITIAL_STATE = {
   data: []
 };
 
-export default function example(state = INITIAL_STATE, action) {
+interface Iaction {
+  type: string;
+  payload: {
+    data: any;
+    error: any;
+  };
+}
+
+export default function example(state = INITIAL_STATE, action: Iaction) {
   switch (action.type) {
     case Types.ADD_REQUEST:
       return { ...state, loading: true };
@@ -37,15 +45,15 @@ export default function example(state = INITIAL_STATE, action) {
 // SECTION Action Creators
 
 export const Creators = {
-  addExampleRequest: exampleData => ({
+  addExampleRequest: (exampleData: any) => ({
     type: Types.ADD_REQUEST,
     payload: { exampleData }
   }),
-  addExampleSuccess: data => ({
+  addExampleSuccess: (data: any) => ({
     type: Types.ADD_SUCCESS,
     payload: { data }
   }),
-  addExampleFailure: error => ({
+  addExampleFailure: (error: any) => ({
     type: Types.ADD_FAILURE,
     payload: { error }
   })

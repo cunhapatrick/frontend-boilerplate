@@ -7,6 +7,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
+    "noImplicitAny": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "preserveConstEnums": true,
@@ -14,6 +15,16 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "target": "esnext"
+    "target": "esnext",
+    "baseUrl": "src",
+    "include": ["./src/**/*"],
+    "excludes": ["node_modules"],
+    "paths": {
+      "components/*": ["app/components/*"],
+      "services/*": ["app/services/*"],
+      "ducks/*": ["app/store/ducks/*"],
+      "sagas/*": ["app/store/sagas/*"],
+      "storeLoad": ["app/store/index.js"]
+    }
   }
 }

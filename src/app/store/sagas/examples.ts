@@ -1,9 +1,9 @@
 import { call, put } from "redux-saga/effects";
-import api from "../../services/api";
+import api from "services/api";
 
-import { Creators as ExampleActions } from "../ducks/examples";
+import { Creators as ExampleActions } from "ducks/examples";
 
-export function* ExampleSagaMiddleware(action) {
+export function* ExampleSagaMiddleware(action: any) {
   // NOTE get data from request action
   // const { ExampleData } = action.payload;
 

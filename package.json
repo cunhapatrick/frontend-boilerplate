@@ -5,11 +5,32 @@
   "main": "index.js",
   "author": "Patrick Cunha & Beto",
   "license": "MIT",
+  "jest": {
+    "verbose": true,
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/babel-jest"
+    },
+    "moduleNameMapper": {
+      "\\.(css|less)$": "<rootDir>/node_modules/jest-css-modules"
+    },
+    "setupFiles": [
+      "<rootDir>/src/config/test-setup.js"
+    ],
+    "roots": [
+      "<rootDir>/src/app/components/"
+    ],
+    "testRegex": "\\.test\\.(ts|tsx|js)$"
+  },
   "scripts": {
     "dev": "next src",
     "start": "next start",
     "build": "next build src",
-    "test": ""
+    "test": "jest --watchAll"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
@@ -17,6 +38,7 @@
     "@zeit/next-typescript": "^1.1.1",
     "antd": "^3.15.1",
     "apisauce": "^1.0.2",
+    "awesome-typescript-loader": "^5.2.1",
     "css-loader": "1.0.1",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
@@ -33,20 +55,31 @@
     "reactotron-redux-saga": "^4.2.1",
     "redux": "^4.0.1",
     "redux-saga": "^1.0.2",
-    "style-loader": "^0.23.1"
+    "require-dir": "^1.2.0",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6"
   },
   "devDependencies": {
     "@types/enzyme": "^3.9.1",
     "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/jest": "^24.0.11",
     "@types/next": "^8.0.3",
     "@types/react": "^16.8.8",
     "@types/react-dom": "^16.8.3",
+    "babel-jest": "^24.5.0",
     "babel-plugin-import": "^1.11.0",
+    "babel-preset-env": "^1.7.0",
     "chalk": "^2.4.2",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.11.2",
+    "enzyme-to-json": "^3.3.5",
     "jest": "^24.5.0",
+    "jest-css-modules": "^1.1.0",
+    "react-test-renderer": "^16.8.5",
     "sinon": "^7.3.0",
-    "tslint-config-airbnb": "^5.11.1"
+    "ts-jest": "^24.0.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.3.4000"
   }
 }

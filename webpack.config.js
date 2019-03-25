@@ -1,4 +1,28 @@
+const path = require("path");
+
+function srcPath(subdir) {
+  return path.join(__dirname, "src", subdir);
+}
+
 const webpackConfig = {
+  resolve: {
+    extensions: [".ts", ".js", ".json", ",tsx"]
+  },
+  devtool: "source-map",
+  modules: {
+    loaders: [
+      {
+        test: /.tsx?$/,
+        loader: "awesome-typescript-loader",
+        exclude: /node_modules/
+      },
+      {
+        test: /.js$/,
+        loader: "source-map-loader",
+        enforce: "pre"
+      }
+    ]
+  },
   rules: [
     {
       test: /\.less$/,

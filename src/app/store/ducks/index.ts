@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import exampleDuck from "./example";
+import * as exampleDuck from "./examples";
 
 export default combineReducers({
   exampleDuck

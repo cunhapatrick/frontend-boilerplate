@@ -6,7 +6,7 @@ import sagas from "./sagas";
 
 const middlewares = [];
 
-import "../../config/reactotron";
+import "config/reactotron";
 
 const sagaMonitor =
   process.env.NODE_ENV === "development"
