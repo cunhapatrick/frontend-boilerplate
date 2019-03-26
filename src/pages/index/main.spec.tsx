@@ -1,5 +1,5 @@
-import React from "react";
-import Main from "./main";
+// import React from "react";
+// import Main from "./main";
 
 // NOTE enzyme to mount components
 // import { shallow, mount } from "enzyme";
