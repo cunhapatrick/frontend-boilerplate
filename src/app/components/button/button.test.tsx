@@ -1,8 +1,7 @@
 import * as React from "react";
-import { shallow } from "enzyme";
+import { shallow, mount } from "enzyme";
 
-// FIXME Antd module components is bugging on enzyme tests
-// import Button from "./button";
+import Button from "./button";
 
 describe("Example Component Tests", () => {
   it("Should render the text properly element", () => {
@@ -13,5 +12,10 @@ describe("Example Component Tests", () => {
   it("Should contain a specific class name", () => {
     const wrapper = shallow(<div className="test">Example</div>);
     expect(wrapper.find(".test")).toBeTruthy();
+  });
+
+  it("Should render the antd component properly", () => {
+    const wrapper = mount(<Button />);
+    expect(wrapper.text()).toBe("Button Example");
   });
 });

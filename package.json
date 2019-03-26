@@ -10,7 +10,8 @@
     "moduleFileExtensions": [
       "ts",
       "tsx",
-      "js"
+      "js",
+      "json"
     ],
     "transform": {
       "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/babel-jest"
@@ -62,6 +63,7 @@
     "webpack": "^4.29.6"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.0",
     "@types/enzyme": "^3.9.1",
     "@types/enzyme-adapter-react-16": "^1.0.5",
     "@types/jest": "^24.0.11",
