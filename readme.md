@@ -29,3 +29,33 @@ Run `$ yarn build && yarn start` to build and run the production enviromnent of 
 # Run Tests
 
 Run `$ yarn test` and wait for the results.
+
+# Applied Tecnologies
+
+## React Hooks
+
+Used to mount the components examples of the component with some features like que useState and the useEffect and how to operate with them.
+
+## SSR (Server Side Renderer)
+
+Used to increase the performance of future applications, using nextjs to configure this procedure.
+
+## TypeScript
+
+Used to improve the syntax codification of the products
+
+## Less
+
+CSS pre-processor to build better css codification
+
+## Antd
+
+CSS modular Framework to help the creation of styled components
+
+## Jest & Enzyme
+
+Jest is a Test Web Framework used to run automatic test's on the application together with enzyme that mount virtual rendered components executing component unit tests.
+
+## Redux & Redux Saga
+
+Redux is used to help the data flow of the application storing the states of components inside one place and share with the rest of the application and the redux saga is used as a middleware feature for the redux that intercept a action request to work with third party api's and similar application without breaking the dataflow.
