@@ -4,7 +4,7 @@ import "./styles.button.less";
 
 // NOTE React Hook code to create component
 export default function button() {
-  const [name, setName] = useState("Button Example");
+  const [name] = useState("Button Example");
   const [counter, setCount] = useState(0);
 
   useEffect(() => {

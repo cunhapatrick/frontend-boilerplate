@@ -17,8 +17,6 @@
     "strict": true,
     "target": "esnext",
     "baseUrl": "src",
-    "include": ["./src/**/*"],
-    "excludes": ["node_modules"],
     "paths": {
       "components/*": ["app/components/*"],
       "services/*": ["app/services/*"],
