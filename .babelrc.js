@@ -1,5 +1,5 @@
 module.exports = {
-  presets: ["next/babel", "@zeit/next-typescript/babel", "babel-preset-env"],
+  presets: ["next/babel", "@zeit/next-typescript/babel"],
   plugins: [
     [
       "import",
@@ -7,6 +7,7 @@ module.exports = {
         libraryName: "antd",
         style: true
       }
-    ]
+    ],
+    "@babel/plugin-transform-classes"
   ]
 };

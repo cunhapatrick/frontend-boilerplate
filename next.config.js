@@ -10,7 +10,8 @@ if (typeof require !== "undefined") {
 module.exports = withTypescript(
   withLess(
     withCss({
-      distDir: "../build",
+      // distDir: "../build",
+      pageExtensions: ['jsx', 'js','ts','tsx'],
       webpack: (config, options) => {
         return config;
       },
