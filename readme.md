@@ -55,6 +55,6 @@ Jest é um Framework Web para testes usado para criar testes automatizados na ap
 
 Redux é usado para ajudar no fluxo de data da aplicação disponibilizando a troca de estados entre os componentes sem um componente precisar tomar ciencia da existência do outro, os dados ficam disponiveis em um local de comum acesso para todos os componentes do projeto enquanto o redux-saga serve como um middleware para trabalha a interceptação de requisições AJAX ou outra atividade que precise ser feito antes da distribuição dos dados sem quebrar o fluxo de dados e mantendo performance.
 
-## Api Sause
+## Api Sauce
 
 Ferramenta utilizada para trabalhar requisições AJAX baseada no axios com algumas funções adicionais.
