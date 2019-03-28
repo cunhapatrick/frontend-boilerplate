@@ -62,3 +62,18 @@ Ferramenta utilizada para trabalhar requisições AJAX baseada no axios com algu
 ## Arquitetura Flux
 
 O boilerplate está utilizando a arquitetura flux proposta pelo facebook para trabalhar com o dataflow do frontend que ao contrário do MVC(Model View Controller) que trabalha um cenário diferente onde o backend e frontend estão integrados, o flux trabalha criando uma arquitetura de software que funciona como uma luva para trabalhar com react/redux/redux-saga.
+
+# Diretórios & Arquivos Importantes
+
+- root
+  - src -> Contem toda o código de desenvolvimento do projeto.
+    - config -> Configurações especificas de módulos usados no projeto.
+    - pages -> Páginas do sistema.
+    - static -> "Public" do projeto, seguindo a nomenclatura do next.
+    - app -> Possui a códificação em modo geral da aplicação.
+      - components -> Contem os componentes do projeto.
+      - services -> Serviço de terceiros em geral (chamada API, etc...).
+      - store -> Configuração do Redux/Redux-Saga e afins.
+        - ducks -> Arquivos combinados com os reducers, action creators e tipos de eventos.
+        - sagas -> Possui os middlewares para interceptar o redux.
+  - build -> Contem o projeto construido pronto para o ambiente de produção
