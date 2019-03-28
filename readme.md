@@ -58,3 +58,7 @@ Redux é usado para ajudar no fluxo de data da aplicação disponibilizando a tr
 ## Api Sauce
 
 Ferramenta utilizada para trabalhar requisições AJAX baseada no axios com algumas funções adicionais.
+
+## Arquitetura Flux
+
+O boilerplate está utilizando a arquitetura flux proposta pelo facebook para trabalhar com o dataflow do frontend que ao contrário do MVC(Model View Controller) que trabalha um cenário diferente onde o backend e frontend estão integrados, o flux trabalha criando uma arquitetura de software que funciona como uma luva para trabalhar com react/redux/redux-saga.
